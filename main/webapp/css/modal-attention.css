@@ -1,0 +1,85 @@
+/* 공통 */
+@import url('https://webfontworld.github.io/yangheeryu/Dongle.css');
+@import url('https://webfontworld.github.io/kotra/KotraBold.css');
+@import url('https://webfontworld.github.io/Cafe24Ssurround/Cafe24Ssurround.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap');
+
+
+:root{
+    --font-sizeS: 1em;
+    --font-sizeM : 1.5em;
+    --font-sizeL: 2em;
+    --font-sizeXL: 2.5em;
+    --font-sizeXXL: 3em;
+
+    --color-white: #fff;
+    --color-black: #313131;
+    --color-lightgray: #dcdcdc90;
+}
+
+
+
+.inactive2{
+    display: none;
+  }
+  
+  .modalBackground-attention{
+    position: fixed;
+    top:0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 998;
+  }
+  
+  
+  .modalContainer-attention{
+    width: 800px;
+    height: 700px;
+    margin: 150px auto;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    overflow: auto;
+  }
+  
+  .modalContainer-attention > div{
+  text-align: center;
+  }
+  
+  .modalTitle-attention{
+    font-family: 'KotraBold';
+    font-size: var(--font-sizeXL);
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .modalInput{
+    font-size: var(--font-sizeM);
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  .modalInput input{
+    width: 300px;
+    border:none;
+    border-bottom: 2px solid lightgray;
+    font-size: var(--font-sizeM);
+  }
+
+
+  .modalBnt button{
+    width: 280px;
+    background-color:#ff6544;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    color:#fff;
+    font-size:20px;
+  }

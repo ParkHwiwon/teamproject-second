@@ -1,0 +1,365 @@
+/* 공통 */
+@import url('https://webfontworld.github.io/yangheeryu/Dongle.css');
+@import url('https://webfontworld.github.io/kotra/KotraBold.css');
+@import url('https://webfontworld.github.io/Cafe24Ssurround/Cafe24Ssurround.css');
+
+
+:root{
+    --font-sizeS: 1em;
+    --font-sizeM : 1.5em;
+    --font-sizeL: 2em;
+    --font-sizeXL: 2.5em;
+    --font-sizeXXL: 3em;
+
+    --color-white: #fff;
+    --color-black: #313131;
+    --color-lightgray: #dcdcdc90;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* header */
+
+header{
+    position: fixed;
+    top: 0;
+    width: 1920px;
+    height: 100px;
+}
+.headerWrap .changeBtn {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'KotraBold';
+  font-weight: 800;
+}
+.headerWrap .navMenu ul > li > a{
+    color: black;
+}
+.headerWrap{
+    display: flex;
+    align-items: center;
+    font-size: var(--font-sizeM);
+    justify-content: space-evenly;
+    width:100%;
+}
+.headerWrap img{
+    width: 100px;
+    height: 100px;
+}
+.headerWrap .logo{
+    width: 400px;
+    height: 100px;
+}
+
+.headerWrap .logo div {
+    font-size: var(--font-sizeXL);
+    font-family: 'Dongle';
+    color: var(--color-black);
+}
+
+.headerWrap .logo a{
+    display: flex;
+    align-items: center;
+}
+.headerWrap .navMenu{
+    width: 700px;
+    height: 100%;
+    justify-content: space-around;
+}
+.headerWrap .navMenu ul,
+.headerWrap .changeBtn{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'KotraBold';
+    font-weight: 800;
+}
+
+.headerWrap .navMenu ul{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'KotraBold';
+    font-weight: 800;
+}
+
+.headerWrap .signin-signup{
+    display: inherit;
+
+}
+
+.signin-signup button{
+    padding: 10px;
+    margin-right: 20px;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: 'Dongle';
+    font-weight: 1000;
+    font-size: var(--font-sizeS);
+    text-align: center;
+    line-height: 20px;
+    box-shadow : 3px 3px 3px black;
+    transition-duration: 0.3s;
+}
+.signin-signup button:active{
+    position: relative;
+    top:2px;
+    box-shadow : 1px 1px 0 rgb(0,0,0,0.5);
+}
+
+
+.signin1{
+    background: var(--color-black);
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+}
+.signin{
+    border:none;
+}
+.signup1{
+    background: var(--color-white);
+    border: 1px solid var(--color-lightgray);
+    cursor: pointer;
+    border:none;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    vertical-align:middle;
+    margin-left: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: var(--color-black);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--color-black);
+}
+
+input:checked + .slider:before{
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.toggleBtn {
+    padding: 10px;
+    margin-right: 20px;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: 'Dongle';
+    font-weight: 1000;
+    font-size: var(--font-sizeS);
+    text-align: center;
+    line-height: 20px;
+    box-shadow: 3px 3px 3px black;
+    transition-duration: 0.3s;
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* footer */
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    border-top: 1px solid black;
+    background: #313131;
+    color: #fff;
+}
+
+footer .footerWrap{
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+
+main{
+margin:200px 0px 200px 0px;
+font-family: 'Poppins', sans-serif;
+}
+body{
+text-align: center;
+
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: #FFF;
+}
+  
+
+.wrapper{
+  overflow: hidden;
+  width: 800px;
+  height: 500px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  border: 1px solid orange; 
+}
+.wrapper .title-text{
+  display: flex;
+  width: 200%;
+}
+.wrapper .title{
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.title{
+  margin-left: 200px;
+}
+.company-login, .manage-login{
+  display:none;
+}
+.wrapper .slide-controls{
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 10px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.select-mode{
+  margin-top: 50px;
+  font-size:0;
+  line-height: 0;
+}
+#userlogin{
+  background-color: #FB6544;
+  color:#fff;
+}
+#comlogin, #mglogin{
+  background-color: lightgray;;
+}
+#userlogin, #comlogin, #mglogin{
+  width: 200px;
+  border:none;
+  height:70px;
+  font-size: 20px;
+  font-family: 'KotraBold';
+  border-radius:5px;
+  cursor:pointer;
+}
+.field{
+  height: 50px;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 77px;
+  border:none;
+}
+
+.field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border:none;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+.field input:focus{
+  border-color:  #FB6544;
+  box-shadow: inset 0 0 3px #fb6544;
+}
+.loginbtn{
+  background-color:#FB6544;
+  color:#fff;
+  border: none;
+  font-size: 20px;
+  font-family: 'KotraBold';
+}
+.signup-link{
+  font-family: 'KotraBold';
+  margin-top: 20px;
+}
+.signup-link a{
+  font-family: 'KotraBold';
+}
+.clogin,.mlogin{
+  display:none;
+}
+.signup-link a:visited{
+	color:#fb6544;
+}
+
+/* 다크모드 */
+.dark-mode {
+  background-color: #111;
+  color: #fff;
+}
+
+.toggle-btn {
+  background-color: #111;
+  color: #fff;
+}
